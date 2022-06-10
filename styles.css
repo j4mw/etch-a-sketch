@@ -5,4 +5,11 @@
     /* border: 1px solid red; */
     flex-flow: row wrap;
     background-color: rgb(252, 246, 238);
+    outline: 1px solid rgb(228, 34, 34);
 }
+
+#genButton {
+    background-color: rgb(141, 235, 141);
+}
+
+

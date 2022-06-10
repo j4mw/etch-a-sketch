@@ -16,8 +16,17 @@
             <button>ERASE</button>
             <button>UNDO</button>
             <button>CLEAR</button>
-            <input class="userInput" id="cellSize" value="16"> <!-- sets defualt value of grid -->
+            <select id="cellSize">
+                <option value="4">4 x 4</option>
+                <option value="8">8 x 8</option>
+                <option value="16" selected>16 x 16</option>
+                <option value="32">32 x 32</option>
+                <option value="64">64 x 64</option>
+            </select>
+            <!-- <input class="userInput" id="cellSize" value="16"> --> <!-- sets defualt value of grid -->
+            <button id="genButton" onclick="init()">GENERATE</button>
         </div>
+    
     </div>
     <div class="gridContainer">
 
