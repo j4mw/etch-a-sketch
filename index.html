@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>etch-a-sketch</title>
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header">
-        <div class="title">etch-a-sketch</div>
+ 
+    </div>
+
+    <div id="easFrame">
+        <div id="easHeader">
+            <div id="titleEAS"><span id="titleEASsmall">pocket </span><span>etch-a-sketch</span></div>
+        </div>
+
+        <div id="easDraw">
+            <div class="gridContainer">
+        </div>
+        </div>
         <div class="commandCentre">
-            <button>COLOUR</button>
-            <button>ERASE</button>
-            <button>UNDO</button>
-            <button>CLEAR</button>
             <select id="cellSize">
                 <option value="4">4 x 4</option>
                 <option value="8">8 x 8</option>
@@ -25,13 +34,15 @@
             </select>
             <!-- <input class="userInput" id="cellSize" value="16"> --> <!-- sets defualt value of grid -->
             <button id="genButton" onclick="init()">GENERATE</button>
+            <button class="modeSelector" id="drawMode" onclick="changeMode()">✏️</button>
+            <button class="penSelector" id="classicMode" onclick="changePen()">CLASSIC</button>
+
+            <input id="colourPicker" type="color"></button>
+            <button id="clearButton" onclick="init()">CLEAR</button>
         </div>
+    </div>
+
     
-    </div>
-    <div class="gridContainer">
-
-    </div>
-
 
 </body>
 <script src="script.js"> </script>
