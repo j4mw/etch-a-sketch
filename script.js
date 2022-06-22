@@ -73,17 +73,17 @@ function changePen() {
 
   if (penCheck.id == "classicMode") {
     penSelector.setAttribute("id", "tintMode");
-    penSelector.textContent = "TINT";
+    penSelector.textContent = "🌚";
     console.log(penSelector.id);
     return penSelector.id;
   } else if (penCheck.id == "tintMode") {
     penSelector.setAttribute("id", "randomMode");
-    penSelector.textContent = "RANDOM";
+    penSelector.textContent = "😵";
     console.log(penSelector.id);
     return penSelector.id;
   } else {
     penSelector.setAttribute("id", "classicMode");
-    penSelector.textContent = "CLASSIC";
+    penSelector.textContent = "😶";
     console.log(penSelector.id);
     return penSelector.id;
   }
